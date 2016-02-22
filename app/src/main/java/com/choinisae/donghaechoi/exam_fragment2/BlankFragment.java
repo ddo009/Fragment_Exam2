@@ -40,8 +40,7 @@ public class BlankFragment extends Fragment implements View.OnClickListener {
 
         return view;
     }
-
-
+    
     @Override
     public void onClick(View v) {
         if (v.getId() == mBtn1.getId()) {
