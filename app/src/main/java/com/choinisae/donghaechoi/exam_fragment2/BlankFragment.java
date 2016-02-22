@@ -22,7 +22,7 @@ public class BlankFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.activity_main, container, false);
+        View view = inflater.inflate(R.layout.fragment_blank, container, false);
 
         mBtn1 = (Button) view.findViewById(R.id.btn1); // + - reset
         mBtn2 = (Button) view.findViewById(R.id.btn2);
@@ -40,7 +40,7 @@ public class BlankFragment extends Fragment implements View.OnClickListener {
 
         return view;
     }
-    
+
     @Override
     public void onClick(View v) {
         if (v.getId() == mBtn1.getId()) {

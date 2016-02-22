@@ -14,15 +14,15 @@ public class MainActivity extends AppCompatActivity implements FragmentDataListe
     private TextView mBteamTxt;
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         frag1 = (BlankFragment) getSupportFragmentManager().findFragmentById(R.id.frag1);
         mAteamTxt = (TextView) findViewById(R.id.ateam_txt);
         mBteamTxt = (TextView) findViewById(R.id.bteam_txt);
         frag1.setListener(this);
     }
-
 
     @Override
     public void dataListener(int aTeam, int bTeam) {
